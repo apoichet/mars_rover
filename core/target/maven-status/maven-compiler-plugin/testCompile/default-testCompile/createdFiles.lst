@@ -1,0 +1,4 @@
+fr/alex/kata/marsrover/domain/command/impl/BackwardTest.class
+fr/alex/kata/marsrover/function/move/cartesian/CartesianRotateTest.class
+fr/alex/kata/marsrover/domain/command/impl/ForwardTest.class
+fr/alex/kata/marsrover/function/move/cartesian/CartesianTranslateTest.class

@@ -1,0 +1,4 @@
+/home/alex/WorkSpace/working_directory/mars_rover_back/core/src/test/java/fr/alex/kata/marsrover/domain/command/impl/ForwardTest.java
+/home/alex/WorkSpace/working_directory/mars_rover_back/core/src/test/java/fr/alex/kata/marsrover/domain/command/impl/BackwardTest.java
+/home/alex/WorkSpace/working_directory/mars_rover_back/core/src/test/java/fr/alex/kata/marsrover/function/move/cartesian/CartesianRotateTest.java
+/home/alex/WorkSpace/working_directory/mars_rover_back/core/src/test/java/fr/alex/kata/marsrover/function/move/cartesian/CartesianTranslateTest.java
