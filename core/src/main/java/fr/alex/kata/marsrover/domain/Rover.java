@@ -1,32 +1,34 @@
 package fr.alex.kata.marsrover.domain;
 
-/**
- * Created by alex on 01/06/17.
- */
-public abstract class Rover {
+import static fr.alex.kata.marsrover.domain.OrientationEnum.NORTH;
 
-    private int id;
+public class Rover {
 
-    public int getId() {
-        return id;
+    private OrientationEnum orientation;
+    public CartesianCoordinate coordinate;
+
+    public Rover(OrientationEnum orientation, CartesianCoordinate coordinate) {
+        this.orientation = orientation;
+        this.coordinate = coordinate;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Rover(CartesianCoordinate coordinate) {
+        this.orientation = NORTH;
+        this.coordinate = coordinate;
     }
 
-    public abstract Rover copyOf();
+    public OrientationEnum getOrientation() {
+        return orientation;
+    }
 
-    public abstract boolean isOut(MarsMap marsMap);
+    public void setOrientation(OrientationEnum orientation) {
+        this.orientation = orientation;
+    }
 
-    public abstract String getPosition();
+    public Rover copyOf(){
+        return new Rover(orientation, coordinate.copyOf());
 
-    public abstract Rover backward();
 
-    public abstract Rover forward();
-
-    public abstract Rover turnLeft();
-
-    public abstract Rover turnRight();
+    }
 
 }
